@@ -1,0 +1,17 @@
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\bin\Debug\HotelManagement-Information-Management-2.exe.config
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\bin\Debug\HotelManagement-Information-Management-2.exe
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\bin\Debug\HotelManagement-Information-Management-2.pdb
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.csproj.AssemblyReference.cache
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form1.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form2.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Properties.Resources.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.csproj.GenerateResource.cache
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.csproj.CoreCompileInputs.cache
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.csproj.CopyComplete
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.exe
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.pdb
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form3.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form4.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form5.resources
+C:\Users\My PC\source\repos\HotelManagement-Information-Management-2\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Form6.resources

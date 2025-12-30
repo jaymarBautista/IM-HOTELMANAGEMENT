@@ -122,5 +122,35 @@ namespace HotelManagement_Information_Management_2
             CreateAccount createForm = new CreateAccount();
             createForm.Show();
         }
+
+        private void numCheckInPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numPendingPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numGuestPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numRoomsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numCheckIn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

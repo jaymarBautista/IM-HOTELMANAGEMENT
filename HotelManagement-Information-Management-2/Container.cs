@@ -13,6 +13,7 @@ namespace HotelManagement_Information_Management_2
 {
     public partial class Container : Form
     {
+        //gen
         private string _role;
         private int _userId;
         private string _username;
@@ -91,6 +92,11 @@ namespace HotelManagement_Information_Management_2
         private void iconButton5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

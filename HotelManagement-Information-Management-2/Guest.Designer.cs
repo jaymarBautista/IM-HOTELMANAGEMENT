@@ -63,10 +63,9 @@ namespace HotelManagement_Information_Management_2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(271, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(361, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 18);
+            this.label2.Size = new System.Drawing.Size(121, 22);
             this.label2.TabIndex = 11;
             this.label2.Text = "Checked-in";
             // 
@@ -75,6 +74,7 @@ namespace HotelManagement_Information_Management_2
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FullName,
@@ -84,57 +84,70 @@ namespace HotelManagement_Information_Management_2
             this.CheckIn,
             this.Column5});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(274, 142);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(365, 175);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(502, 153);
+            this.dataGridView1.Size = new System.Drawing.Size(669, 188);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // FullName
             // 
             this.FullName.HeaderText = "Full Name";
+            this.FullName.MinimumWidth = 6;
             this.FullName.Name = "FullName";
             this.FullName.ReadOnly = true;
+            this.FullName.Width = 125;
             // 
             // ContactNumber
             // 
             this.ContactNumber.HeaderText = "Contact Number";
+            this.ContactNumber.MinimumWidth = 6;
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.ReadOnly = true;
+            this.ContactNumber.Width = 125;
             // 
             // EmegencyContact
             // 
             this.EmegencyContact.HeaderText = "Emergency Contact";
+            this.EmegencyContact.MinimumWidth = 6;
             this.EmegencyContact.Name = "EmegencyContact";
             this.EmegencyContact.ReadOnly = true;
+            this.EmegencyContact.Width = 125;
             // 
             // Room
             // 
             this.Room.HeaderText = "Room";
+            this.Room.MinimumWidth = 6;
             this.Room.Name = "Room";
             this.Room.ReadOnly = true;
+            this.Room.Width = 125;
             // 
             // CheckIn
             // 
             this.CheckIn.HeaderText = "Check In";
+            this.CheckIn.MinimumWidth = 6;
             this.CheckIn.Name = "CheckIn";
             this.CheckIn.ReadOnly = true;
+            this.CheckIn.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Id";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FullNameCo,
@@ -143,114 +156,130 @@ namespace HotelManagement_Information_Management_2
             this.Column3,
             this.Column4});
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.Location = new System.Drawing.Point(274, 344);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Location = new System.Drawing.Point(365, 423);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(502, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(669, 185);
             this.dataGridView2.TabIndex = 13;
             // 
             // FullNameCo
             // 
             this.FullNameCo.HeaderText = "Full Name";
+            this.FullNameCo.MinimumWidth = 6;
             this.FullNameCo.Name = "FullNameCo";
             this.FullNameCo.ReadOnly = true;
+            this.FullNameCo.Width = 125;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Contact Number";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Emergency Contact";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Room";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Check Out";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(271, 324);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(361, 399);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 18);
+            this.label1.Size = new System.Drawing.Size(134, 22);
             this.label1.TabIndex = 14;
             this.label1.Text = "Checked-out";
             // 
             // fullnameTxt
             // 
             this.fullnameTxt.Enabled = false;
-            this.fullnameTxt.Location = new System.Drawing.Point(111, 188);
+            this.fullnameTxt.Location = new System.Drawing.Point(148, 231);
+            this.fullnameTxt.Margin = new System.Windows.Forms.Padding(4);
             this.fullnameTxt.Name = "fullnameTxt";
-            this.fullnameTxt.Size = new System.Drawing.Size(158, 20);
+            this.fullnameTxt.Size = new System.Drawing.Size(209, 22);
             this.fullnameTxt.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 195);
+            this.label3.Location = new System.Drawing.Point(7, 240);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 23;
             this.label3.Text = "Full Name";
             // 
             // emergencyTxt
             // 
             this.emergencyTxt.Enabled = false;
-            this.emergencyTxt.Location = new System.Drawing.Point(111, 275);
+            this.emergencyTxt.Location = new System.Drawing.Point(148, 338);
+            this.emergencyTxt.Margin = new System.Windows.Forms.Padding(4);
             this.emergencyTxt.Name = "emergencyTxt";
-            this.emergencyTxt.Size = new System.Drawing.Size(158, 20);
+            this.emergencyTxt.Size = new System.Drawing.Size(209, 22);
             this.emergencyTxt.TabIndex = 22;
             // 
             // dad
             // 
             this.dad.AutoSize = true;
-            this.dad.Location = new System.Drawing.Point(5, 275);
+            this.dad.Location = new System.Drawing.Point(7, 338);
+            this.dad.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.dad.Name = "dad";
-            this.dad.Size = new System.Drawing.Size(100, 13);
+            this.dad.Size = new System.Drawing.Size(131, 17);
             this.dad.TabIndex = 21;
             this.dad.Text = "Emergency Contact";
             // 
             // contactTxt
             // 
             this.contactTxt.Enabled = false;
-            this.contactTxt.Location = new System.Drawing.Point(111, 234);
+            this.contactTxt.Location = new System.Drawing.Point(148, 288);
+            this.contactTxt.Margin = new System.Windows.Forms.Padding(4);
             this.contactTxt.Name = "contactTxt";
-            this.contactTxt.Size = new System.Drawing.Size(158, 20);
+            this.contactTxt.Size = new System.Drawing.Size(209, 22);
             this.contactTxt.TabIndex = 20;
             // 
             // fdaw
             // 
             this.fdaw.AutoSize = true;
-            this.fdaw.Location = new System.Drawing.Point(5, 234);
+            this.fdaw.Location = new System.Drawing.Point(7, 288);
+            this.fdaw.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.fdaw.Name = "fdaw";
-            this.fdaw.Size = new System.Drawing.Size(84, 13);
+            this.fdaw.Size = new System.Drawing.Size(110, 17);
             this.fdaw.TabIndex = 19;
             this.fdaw.Text = "Contact Number";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 145);
+            this.label5.Location = new System.Drawing.Point(67, 178);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 15;
             this.label5.Text = "hiddenID";
             this.label5.Visible = false;
@@ -265,11 +294,11 @@ namespace HotelManagement_Information_Management_2
             this.editBtn.IconColor = System.Drawing.Color.White;
             this.editBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.editBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editBtn.Location = new System.Drawing.Point(582, 22);
-            this.editBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.editBtn.Location = new System.Drawing.Point(776, 27);
+            this.editBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editBtn.Name = "editBtn";
-            this.editBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.editBtn.Size = new System.Drawing.Size(185, 61);
+            this.editBtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.editBtn.Size = new System.Drawing.Size(247, 75);
             this.editBtn.TabIndex = 25;
             this.editBtn.Text = "Edit User";
             this.editBtn.UseVisualStyleBackColor = false;
@@ -286,11 +315,11 @@ namespace HotelManagement_Information_Management_2
             this.saveBtn.IconColor = System.Drawing.Color.White;
             this.saveBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.saveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveBtn.Location = new System.Drawing.Point(36, 378);
-            this.saveBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.saveBtn.Location = new System.Drawing.Point(48, 465);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.saveBtn.Size = new System.Drawing.Size(170, 46);
+            this.saveBtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.saveBtn.Size = new System.Drawing.Size(227, 57);
             this.saveBtn.TabIndex = 26;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
@@ -300,17 +329,18 @@ namespace HotelManagement_Information_Management_2
             // idTxt
             // 
             this.idTxt.Enabled = false;
-            this.idTxt.Location = new System.Drawing.Point(111, 142);
+            this.idTxt.Location = new System.Drawing.Point(148, 175);
+            this.idTxt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.idTxt.Name = "idTxt";
-            this.idTxt.Size = new System.Drawing.Size(158, 20);
+            this.idTxt.Size = new System.Drawing.Size(209, 22);
             this.idTxt.TabIndex = 27;
             this.idTxt.Visible = false;
             // 
             // Guest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 574);
+            this.ClientSize = new System.Drawing.Size(1234, 706);
             this.Controls.Add(this.idTxt);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.editBtn);
@@ -326,7 +356,7 @@ namespace HotelManagement_Information_Management_2
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Guest";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Guest_Load);

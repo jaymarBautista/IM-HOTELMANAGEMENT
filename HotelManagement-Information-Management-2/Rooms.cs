@@ -84,40 +84,69 @@ namespace HotelManagement_Information_Management_2
         }
 
         // Update button color based on room status   di nagana
+        // Update button color based on room status
         private void UpdateRoomButtonColor(string roomNumber, string status)
         {
             FontAwesome.Sharp.IconButton btn = GetRoomButton(roomNumber);
             if (btn == null) return;
 
-            switch (status)
+            // Setting standard properties for the border
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 2; // Adjust thickness as needed
+
+            switch (status.Trim())
             {
                 case "Available":
-                    btn.BackColor = Color.White; // Default
+                    btn.BackColor = Color.Green;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = Color.DarkGreen; // Container border color
                     break;
                 case "Occupied":
-                    btn.BackColor = Color.Yellow;
-                    break;
-                case "Maintenance":
                     btn.BackColor = Color.Red;
                     btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = Color.DarkRed; // Container border color
+                    break;
+                case "Maintenance":
+                    btn.BackColor = Color.Purple;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = Color.Indigo; // Container border color
+                    break;
+                default:
+                    btn.BackColor = Color.White;
+                    btn.ForeColor = Color.Black;
+                    btn.FlatAppearance.BorderColor = Color.Gray;
                     break;
             }
         }
-
-        // Get button by room number
         private FontAwesome.Sharp.IconButton GetRoomButton(string roomNumber)
         {
+            // This matches the naming convention: "s101Btn"
             string btnName = roomNumber.ToLower().Replace("-", "") + "Btn";
 
-            foreach (Control ctrl in this.Controls)
+            // 'true' allows searching through nested child containers (Panels, etc.)
+            Control[] found = this.Controls.Find(btnName, true);
+
+            if (found.Length > 0 && found[0] is FontAwesome.Sharp.IconButton)
             {
-                if (ctrl is FontAwesome.Sharp.IconButton && ctrl.Name.ToLower() == btnName)
-                {
-                    return (FontAwesome.Sharp.IconButton)ctrl;
-                }
+                return (FontAwesome.Sharp.IconButton)found[0];
             }
             return null;
         }
+
+        // Get button by room number
+        /* private FontAwesome.Sharp.IconButton GetRoomButton(string roomNumber)
+         {
+             string btnName = roomNumber.ToLower().Replace("-", "") + "Btn";
+
+             foreach (Control ctrl in this.Controls)
+             {
+                 if (ctrl is FontAwesome.Sharp.IconButton && ctrl.Name.ToLower() == btnName)
+                 {
+                     return (FontAwesome.Sharp.IconButton)ctrl;
+                 }
+             }
+             return null;
+         }*/
 
         // Handle room button click
         private void RoomButton_Click(string roomNumber)
@@ -591,6 +620,14 @@ namespace HotelManagement_Information_Management_2
             return null;
         }
 
+        private void Rooms_Load(object sender, EventArgs e)
+        {
+            LoadRoomStatuses();
+        }
 
+        private void s101Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

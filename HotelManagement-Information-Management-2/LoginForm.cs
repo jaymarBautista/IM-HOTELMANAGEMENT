@@ -91,5 +91,10 @@ namespace HotelManagement_Information_Management_2
             }
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

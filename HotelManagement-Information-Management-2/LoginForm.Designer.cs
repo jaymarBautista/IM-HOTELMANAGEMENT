@@ -49,10 +49,10 @@ namespace HotelManagement_Information_Management_2
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(527, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(703, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(419, 561);
+            this.pictureBox1.Size = new System.Drawing.Size(557, 690);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -63,10 +63,9 @@ namespace HotelManagement_Information_Management_2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(217, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(289, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 42);
+            this.label1.Size = new System.Drawing.Size(121, 52);
             this.label1.TabIndex = 1;
             this.label1.Text = "HMS";
             // 
@@ -75,10 +74,9 @@ namespace HotelManagement_Information_Management_2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(121, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(161, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 27);
+            this.label2.Size = new System.Drawing.Size(389, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "HOTEL MANAGEMENT SYSTEM";
             // 
@@ -87,10 +85,9 @@ namespace HotelManagement_Information_Management_2
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(46, 154);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(61, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 50);
+            this.label3.Size = new System.Drawing.Size(180, 62);
             this.label3.TabIndex = 3;
             this.label3.Text = "Log-in";
             // 
@@ -99,10 +96,9 @@ namespace HotelManagement_Information_Management_2
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(52, 232);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(69, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 16);
+            this.label4.Size = new System.Drawing.Size(90, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "USERNAME:";
             // 
@@ -111,10 +107,9 @@ namespace HotelManagement_Information_Management_2
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(52, 313);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(69, 385);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 16);
+            this.label5.Size = new System.Drawing.Size(92, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "PASSWORD:";
             // 
@@ -122,11 +117,11 @@ namespace HotelManagement_Information_Management_2
             // 
             this.loginBtn.BackColor = System.Drawing.Color.Teal;
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(252, 449);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.loginBtn.Location = new System.Drawing.Point(336, 553);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Padding = new System.Windows.Forms.Padding(4);
-            this.loginBtn.Size = new System.Drawing.Size(145, 50);
+            this.loginBtn.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.loginBtn.Size = new System.Drawing.Size(193, 62);
             this.loginBtn.TabIndex = 6;
             this.loginBtn.Text = "LOG-IN";
             this.loginBtn.UseVisualStyleBackColor = false;
@@ -137,35 +132,36 @@ namespace HotelManagement_Information_Management_2
             this.textBox1.BackColor = System.Drawing.Color.DarkCyan;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(55, 258);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox1.MaximumSize = new System.Drawing.Size(37501, 50000);
+            this.textBox1.Location = new System.Drawing.Point(73, 318);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.textBox1.MaximumSize = new System.Drawing.Size(50000, 50000);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(342, 38);
+            this.textBox1.Size = new System.Drawing.Size(455, 45);
             this.textBox1.TabIndex = 7;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.DarkCyan;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(55, 341);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.MaximumSize = new System.Drawing.Size(37501, 50000);
+            this.textBox2.Location = new System.Drawing.Point(73, 420);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.MaximumSize = new System.Drawing.Size(50000, 50000);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(342, 38);
+            this.textBox2.Size = new System.Drawing.Size(455, 45);
             this.textBox2.TabIndex = 8;
             // 
             // createAccBtn
             // 
             this.createAccBtn.BackColor = System.Drawing.Color.Teal;
             this.createAccBtn.ForeColor = System.Drawing.Color.White;
-            this.createAccBtn.Location = new System.Drawing.Point(55, 449);
-            this.createAccBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.createAccBtn.Location = new System.Drawing.Point(73, 553);
+            this.createAccBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createAccBtn.Name = "createAccBtn";
-            this.createAccBtn.Padding = new System.Windows.Forms.Padding(4);
-            this.createAccBtn.Size = new System.Drawing.Size(145, 50);
+            this.createAccBtn.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.createAccBtn.Size = new System.Drawing.Size(193, 62);
             this.createAccBtn.TabIndex = 9;
             this.createAccBtn.Text = "Create Account";
             this.createAccBtn.UseVisualStyleBackColor = false;
@@ -173,10 +169,10 @@ namespace HotelManagement_Information_Management_2
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(938, 557);
+            this.ClientSize = new System.Drawing.Size(1251, 686);
             this.Controls.Add(this.createAccBtn);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -188,7 +184,7 @@ namespace HotelManagement_Information_Management_2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

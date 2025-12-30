@@ -119,5 +119,10 @@ namespace HotelManagement_Information_Management_2
         {
 
         }
+
+        private void dad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

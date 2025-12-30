@@ -69,7 +69,7 @@ namespace HotelManagement_Information_Management_2
             this.dashboardBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboardBtn.Location = new System.Drawing.Point(29, 122);
-            this.dashboardBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.dashboardBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboardBtn.Name = "dashboardBtn";
             this.dashboardBtn.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.dashboardBtn.Size = new System.Drawing.Size(220, 62);
@@ -88,7 +88,7 @@ namespace HotelManagement_Information_Management_2
             this.guestBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.guestBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.guestBtn.Location = new System.Drawing.Point(29, 254);
-            this.guestBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.guestBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guestBtn.Name = "guestBtn";
             this.guestBtn.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.guestBtn.Size = new System.Drawing.Size(220, 62);
@@ -107,7 +107,7 @@ namespace HotelManagement_Information_Management_2
             this.roomsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.roomsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.roomsBtn.Location = new System.Drawing.Point(29, 188);
-            this.roomsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.roomsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roomsBtn.Name = "roomsBtn";
             this.roomsBtn.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.roomsBtn.Size = new System.Drawing.Size(220, 62);
@@ -126,7 +126,7 @@ namespace HotelManagement_Information_Management_2
             this.bookingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bookingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bookingBtn.Location = new System.Drawing.Point(29, 320);
-            this.bookingBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.bookingBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookingBtn.Name = "bookingBtn";
             this.bookingBtn.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.bookingBtn.Size = new System.Drawing.Size(220, 62);
@@ -146,23 +146,24 @@ namespace HotelManagement_Information_Management_2
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.Location = new System.Drawing.Point(50, 518);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.iconButton5.Size = new System.Drawing.Size(185, 44);
             this.iconButton5.TabIndex = 8;
             this.iconButton5.Text = "Log-out";
             this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // toolStripContainer1
             // 
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(8, 0);
             this.toolStripContainer1.Location = new System.Drawing.Point(1, 574);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(8, 8);
             this.toolStripContainer1.TabIndex = 9;
@@ -181,7 +182,7 @@ namespace HotelManagement_Information_Management_2
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(281, 631);
             this.panel1.TabIndex = 10;
@@ -205,7 +206,7 @@ namespace HotelManagement_Information_Management_2
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(281, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(712, 32);
             this.panel2.TabIndex = 12;
@@ -215,7 +216,7 @@ namespace HotelManagement_Information_Management_2
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Teal;
             this.button1.Location = new System.Drawing.Point(678, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 30);
             this.button1.TabIndex = 5;
@@ -226,7 +227,7 @@ namespace HotelManagement_Information_Management_2
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(280, 30);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(713, 601);
             this.panel3.TabIndex = 13;
@@ -243,7 +244,7 @@ namespace HotelManagement_Information_Management_2
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeBox = false;
             this.Name = "Container";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

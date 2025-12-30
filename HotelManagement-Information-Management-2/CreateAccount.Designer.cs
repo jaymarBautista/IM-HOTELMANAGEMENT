@@ -36,12 +36,18 @@ namespace HotelManagement_Information_Management_2
             this.createBtn = new FontAwesome.Sharp.IconButton();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.contactTxt = new System.Windows.Forms.TextBox();
+            this.fdaw = new System.Windows.Forms.Label();
+            this.emergencyTxt = new System.Windows.Forms.TextBox();
+            this.dad = new System.Windows.Forms.Label();
+            this.fullnameTxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(196, 164);
+            this.label1.Location = new System.Drawing.Point(196, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +55,7 @@ namespace HotelManagement_Information_Management_2
             // 
             // usernameTxt
             // 
-            this.usernameTxt.Location = new System.Drawing.Point(267, 157);
+            this.usernameTxt.Location = new System.Drawing.Point(267, 91);
             this.usernameTxt.Name = "usernameTxt";
             this.usernameTxt.Size = new System.Drawing.Size(116, 20);
             this.usernameTxt.TabIndex = 1;
@@ -74,7 +80,7 @@ namespace HotelManagement_Information_Management_2
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Location = new System.Drawing.Point(267, 209);
+            this.passwordTxt.Location = new System.Drawing.Point(267, 143);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.Size = new System.Drawing.Size(116, 20);
             this.passwordTxt.TabIndex = 5;
@@ -82,17 +88,71 @@ namespace HotelManagement_Information_Management_2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(196, 209);
+            this.label2.Location = new System.Drawing.Point(196, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
+            // 
+            // contactTxt
+            // 
+            this.contactTxt.Location = new System.Drawing.Point(267, 189);
+            this.contactTxt.Name = "contactTxt";
+            this.contactTxt.Size = new System.Drawing.Size(116, 20);
+            this.contactTxt.TabIndex = 7;
+            // 
+            // fdaw
+            // 
+            this.fdaw.AutoSize = true;
+            this.fdaw.Location = new System.Drawing.Point(177, 189);
+            this.fdaw.Name = "fdaw";
+            this.fdaw.Size = new System.Drawing.Size(84, 13);
+            this.fdaw.TabIndex = 6;
+            this.fdaw.Text = "Contact Number";
+            // 
+            // emergencyTxt
+            // 
+            this.emergencyTxt.Location = new System.Drawing.Point(267, 230);
+            this.emergencyTxt.Name = "emergencyTxt";
+            this.emergencyTxt.Size = new System.Drawing.Size(116, 20);
+            this.emergencyTxt.TabIndex = 9;
+            // 
+            // dad
+            // 
+            this.dad.AutoSize = true;
+            this.dad.Location = new System.Drawing.Point(161, 230);
+            this.dad.Name = "dad";
+            this.dad.Size = new System.Drawing.Size(100, 13);
+            this.dad.TabIndex = 8;
+            this.dad.Text = "Emergency Contact";
+            // 
+            // fullnameTxt
+            // 
+            this.fullnameTxt.Location = new System.Drawing.Point(267, 46);
+            this.fullnameTxt.Name = "fullnameTxt";
+            this.fullnameTxt.Size = new System.Drawing.Size(116, 20);
+            this.fullnameTxt.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(196, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Full Name";
             // 
             // CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 467);
+            this.Controls.Add(this.fullnameTxt);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.emergencyTxt);
+            this.Controls.Add(this.dad);
+            this.Controls.Add(this.contactTxt);
+            this.Controls.Add(this.fdaw);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.createBtn);
@@ -100,6 +160,7 @@ namespace HotelManagement_Information_Management_2
             this.Controls.Add(this.label1);
             this.Name = "CreateAccount";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.CreateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +174,11 @@ namespace HotelManagement_Information_Management_2
         private FontAwesome.Sharp.IconButton createBtn;
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox contactTxt;
+        private System.Windows.Forms.Label fdaw;
+        private System.Windows.Forms.TextBox emergencyTxt;
+        private System.Windows.Forms.Label dad;
+        private System.Windows.Forms.TextBox fullnameTxt;
+        private System.Windows.Forms.Label label3;
     }
 }

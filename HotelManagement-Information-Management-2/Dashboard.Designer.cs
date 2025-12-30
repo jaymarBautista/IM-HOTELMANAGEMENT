@@ -30,20 +30,28 @@ namespace HotelManagement_Information_Management_2
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.addUserBtn = new FontAwesome.Sharp.IconButton();
+            this.numGuestPanel = new System.Windows.Forms.Panel();
+            this.numGuest = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.numRoomsPanel = new System.Windows.Forms.Panel();
+            this.numRooms = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.numCheckInPanel = new System.Windows.Forms.Panel();
+            this.numCheckIn = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.numAvail = new System.Windows.Forms.Label();
+            this.numAvailPanel = new System.Windows.Forms.Label();
+            this.numPendingPanel = new System.Windows.Forms.Panel();
+            this.numPending = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numGuestPanel.SuspendLayout();
+            this.numRoomsPanel.SuspendLayout();
+            this.numCheckInPanel.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.numPendingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -57,50 +65,49 @@ namespace HotelManagement_Information_Management_2
             this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // iconButton5
+            // addUserBtn
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.LimeGreen;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(445, 476);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(185, 61);
-            this.iconButton5.TabIndex = 9;
-            this.iconButton5.Text = "Add User";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.addUserBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.addUserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addUserBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addUserBtn.ForeColor = System.Drawing.Color.White;
+            this.addUserBtn.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.addUserBtn.IconColor = System.Drawing.Color.White;
+            this.addUserBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.addUserBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addUserBtn.Location = new System.Drawing.Point(502, 486);
+            this.addUserBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addUserBtn.Name = "addUserBtn";
+            this.addUserBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.addUserBtn.Size = new System.Drawing.Size(185, 61);
+            this.addUserBtn.TabIndex = 9;
+            this.addUserBtn.Text = "Add User";
+            this.addUserBtn.UseVisualStyleBackColor = false;
+            this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
             // 
-            // panel1
+            // numGuestPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(36, 99);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(192, 172);
-            this.panel1.TabIndex = 10;
+            this.numGuestPanel.BackColor = System.Drawing.Color.White;
+            this.numGuestPanel.Controls.Add(this.numGuest);
+            this.numGuestPanel.Controls.Add(this.label2);
+            this.numGuestPanel.Location = new System.Drawing.Point(52, 315);
+            this.numGuestPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numGuestPanel.Name = "numGuestPanel";
+            this.numGuestPanel.Size = new System.Drawing.Size(167, 172);
+            this.numGuestPanel.TabIndex = 10;
             // 
-            // label3
+            // numGuest
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label3.Location = new System.Drawing.Point(76, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 64);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "5";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.numGuest.AutoSize = true;
+            this.numGuest.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numGuest.ForeColor = System.Drawing.Color.DarkViolet;
+            this.numGuest.Location = new System.Drawing.Point(53, 32);
+            this.numGuest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numGuest.Name = "numGuest";
+            this.numGuest.Size = new System.Drawing.Size(53, 64);
+            this.numGuest.TabIndex = 2;
+            this.numGuest.Text = "0";
             // 
             // label2
             // 
@@ -126,29 +133,28 @@ namespace HotelManagement_Information_Management_2
             this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
             this.iconSplitButton1.Text = "iconSplitButton1";
             // 
-            // panel2
+            // numRoomsPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(246, 99);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 172);
-            this.panel2.TabIndex = 11;
+            this.numRoomsPanel.BackColor = System.Drawing.Color.White;
+            this.numRoomsPanel.Controls.Add(this.numRooms);
+            this.numRoomsPanel.Controls.Add(this.label5);
+            this.numRoomsPanel.Location = new System.Drawing.Point(52, 99);
+            this.numRoomsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numRoomsPanel.Name = "numRoomsPanel";
+            this.numRoomsPanel.Size = new System.Drawing.Size(167, 172);
+            this.numRoomsPanel.TabIndex = 11;
             // 
-            // label4
+            // numRooms
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.Location = new System.Drawing.Point(53, 32);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 64);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "10";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.numRooms.AutoSize = true;
+            this.numRooms.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numRooms.ForeColor = System.Drawing.Color.Crimson;
+            this.numRooms.Location = new System.Drawing.Point(53, 32);
+            this.numRooms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numRooms.Name = "numRooms";
+            this.numRooms.Size = new System.Drawing.Size(78, 64);
+            this.numRooms.TabIndex = 2;
+            this.numRooms.Text = "10";
             // 
             // label5
             // 
@@ -162,28 +168,28 @@ namespace HotelManagement_Information_Management_2
             this.label5.TabIndex = 1;
             this.label5.Text = "Total number of Rooms";
             // 
-            // panel3
+            // numCheckInPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(463, 99);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(167, 172);
-            this.panel3.TabIndex = 12;
+            this.numCheckInPanel.BackColor = System.Drawing.Color.White;
+            this.numCheckInPanel.Controls.Add(this.numCheckIn);
+            this.numCheckInPanel.Controls.Add(this.label7);
+            this.numCheckInPanel.Location = new System.Drawing.Point(482, 99);
+            this.numCheckInPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numCheckInPanel.Name = "numCheckInPanel";
+            this.numCheckInPanel.Size = new System.Drawing.Size(167, 172);
+            this.numCheckInPanel.TabIndex = 12;
             // 
-            // label6
+            // numCheckIn
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(53, 32);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 64);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "3";
+            this.numCheckIn.AutoSize = true;
+            this.numCheckIn.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCheckIn.ForeColor = System.Drawing.Color.Red;
+            this.numCheckIn.Location = new System.Drawing.Point(53, 32);
+            this.numCheckIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numCheckIn.Name = "numCheckIn";
+            this.numCheckIn.Size = new System.Drawing.Size(53, 64);
+            this.numCheckIn.TabIndex = 2;
+            this.numCheckIn.Text = "3";
             // 
             // label7
             // 
@@ -197,27 +203,103 @@ namespace HotelManagement_Information_Management_2
             this.label7.TabIndex = 1;
             this.label7.Text = "Total number of Check-in";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.numAvail);
+            this.panel4.Controls.Add(this.numAvailPanel);
+            this.panel4.Location = new System.Drawing.Point(271, 99);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(173, 172);
+            this.panel4.TabIndex = 13;
+            // 
+            // numAvail
+            // 
+            this.numAvail.AutoSize = true;
+            this.numAvail.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numAvail.ForeColor = System.Drawing.Color.Red;
+            this.numAvail.Location = new System.Drawing.Point(62, 39);
+            this.numAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numAvail.Name = "numAvail";
+            this.numAvail.Size = new System.Drawing.Size(53, 64);
+            this.numAvail.TabIndex = 2;
+            this.numAvail.Text = "3";
+            // 
+            // numAvailPanel
+            // 
+            this.numAvailPanel.AutoSize = true;
+            this.numAvailPanel.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numAvailPanel.ForeColor = System.Drawing.Color.DarkCyan;
+            this.numAvailPanel.Location = new System.Drawing.Point(6, 129);
+            this.numAvailPanel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numAvailPanel.Name = "numAvailPanel";
+            this.numAvailPanel.Size = new System.Drawing.Size(161, 15);
+            this.numAvailPanel.TabIndex = 1;
+            this.numAvailPanel.Text = "Total number of Available Rooms";
+            // 
+            // numPendingPanel
+            // 
+            this.numPendingPanel.BackColor = System.Drawing.Color.White;
+            this.numPendingPanel.Controls.Add(this.numPending);
+            this.numPendingPanel.Controls.Add(this.label4);
+            this.numPendingPanel.Location = new System.Drawing.Point(271, 315);
+            this.numPendingPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numPendingPanel.Name = "numPendingPanel";
+            this.numPendingPanel.Size = new System.Drawing.Size(167, 172);
+            this.numPendingPanel.TabIndex = 12;
+            // 
+            // numPending
+            // 
+            this.numPending.AutoSize = true;
+            this.numPending.Font = new System.Drawing.Font("Arial Narrow", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numPending.ForeColor = System.Drawing.Color.Crimson;
+            this.numPending.Location = new System.Drawing.Point(53, 32);
+            this.numPending.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numPending.Name = "numPending";
+            this.numPending.Size = new System.Drawing.Size(53, 64);
+            this.numPending.TabIndex = 2;
+            this.numPending.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label4.Location = new System.Drawing.Point(37, 129);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Total number of Pending";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 556);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.iconButton5);
+            this.ClientSize = new System.Drawing.Size(814, 586);
+            this.Controls.Add(this.numPendingPanel);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.numCheckInPanel);
+            this.Controls.Add(this.numRoomsPanel);
+            this.Controls.Add(this.numGuestPanel);
+            this.Controls.Add(this.addUserBtn);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.numGuestPanel.ResumeLayout(false);
+            this.numGuestPanel.PerformLayout();
+            this.numRoomsPanel.ResumeLayout(false);
+            this.numRoomsPanel.PerformLayout();
+            this.numCheckInPanel.ResumeLayout(false);
+            this.numCheckInPanel.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.numPendingPanel.ResumeLayout(false);
+            this.numPendingPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,16 +308,22 @@ namespace HotelManagement_Information_Management_2
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton addUserBtn;
+        private System.Windows.Forms.Panel numGuestPanel;
+        private System.Windows.Forms.Label numGuest;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel numRoomsPanel;
+        private System.Windows.Forms.Label numRooms;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel numCheckInPanel;
+        private System.Windows.Forms.Label numCheckIn;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label numAvail;
+        private System.Windows.Forms.Label numAvailPanel;
+        private System.Windows.Forms.Panel numPendingPanel;
+        private System.Windows.Forms.Label numPending;
+        private System.Windows.Forms.Label label4;
     }
 }

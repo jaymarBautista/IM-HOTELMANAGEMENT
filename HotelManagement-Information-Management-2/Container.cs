@@ -53,7 +53,7 @@ namespace HotelManagement_Information_Management_2
 
         private void dashboardBtn_Click(object sender, EventArgs e)
         {
-            loadForm(new Dashboard());
+            loadForm(new Dashboard(_userId, _role));
         }
 
        
@@ -64,7 +64,8 @@ namespace HotelManagement_Information_Management_2
 
         private void roomsBtn_Click(object sender, EventArgs e)
         {
-            loadForm(new Rooms());
+            
+            loadForm(new Rooms(_userId, _role));
         }
 
         private void bookingBtn_Click(object sender, EventArgs e)
@@ -87,5 +88,9 @@ namespace HotelManagement_Information_Management_2
 
         }
 
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

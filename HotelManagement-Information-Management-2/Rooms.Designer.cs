@@ -29,94 +29,312 @@ namespace HotelManagement_Information_Management_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.s101Btn = new FontAwesome.Sharp.IconButton();
+            this.s102Btn = new FontAwesome.Sharp.IconButton();
+            this.s104Btn = new FontAwesome.Sharp.IconButton();
+            this.s103Btn = new FontAwesome.Sharp.IconButton();
+            this.s106Btn = new FontAwesome.Sharp.IconButton();
+            this.s105Btn = new FontAwesome.Sharp.IconButton();
+            this.m106Btn = new FontAwesome.Sharp.IconButton();
+            this.m105Btn = new FontAwesome.Sharp.IconButton();
+            this.m104Btn = new FontAwesome.Sharp.IconButton();
+            this.m103Btn = new FontAwesome.Sharp.IconButton();
+            this.m102Btn = new FontAwesome.Sharp.IconButton();
+            this.m101Btn = new FontAwesome.Sharp.IconButton();
+            this.l106Btn = new FontAwesome.Sharp.IconButton();
+            this.l105Btn = new FontAwesome.Sharp.IconButton();
+            this.l104Btn = new FontAwesome.Sharp.IconButton();
+            this.l103Btn = new FontAwesome.Sharp.IconButton();
+            this.l102Btn = new FontAwesome.Sharp.IconButton();
+            this.l101Btn = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(51, 373);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 22);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Reserved Rooms";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.Location = new System.Drawing.Point(55, 409);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(804, 184);
-            this.dataGridView2.TabIndex = 18;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 160);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 188);
-            this.dataGridView1.TabIndex = 17;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(51, 124);
+            this.label2.Location = new System.Drawing.Point(42, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 22);
+            this.label2.Size = new System.Drawing.Size(110, 18);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Available Rooms";
+            this.label2.Text = "Small Rooms";
             // 
-            // iconButton5
+            // label1
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.LimeGreen;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(629, 12);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(247, 75);
-            this.iconButton5.TabIndex = 15;
-            this.iconButton5.Text = "Add User";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label1.Location = new System.Drawing.Point(329, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 18);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Medium Rooms";
             // 
-            // Form5
+            // label3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bookman Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label3.Location = new System.Drawing.Point(598, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 18);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Large Rooms";
+            // 
+            // s101Btn
+            // 
+            this.s101Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s101Btn.IconColor = System.Drawing.Color.Black;
+            this.s101Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s101Btn.Location = new System.Drawing.Point(12, 88);
+            this.s101Btn.Name = "s101Btn";
+            this.s101Btn.Size = new System.Drawing.Size(94, 87);
+            this.s101Btn.TabIndex = 21;
+            this.s101Btn.Text = "S-101";
+            this.s101Btn.UseVisualStyleBackColor = true;
+           
+            // 
+            // s102Btn
+            // 
+            this.s102Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s102Btn.IconColor = System.Drawing.Color.Black;
+            this.s102Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s102Btn.Location = new System.Drawing.Point(125, 88);
+            this.s102Btn.Name = "s102Btn";
+            this.s102Btn.Size = new System.Drawing.Size(94, 87);
+            this.s102Btn.TabIndex = 22;
+            this.s102Btn.Text = "S-102";
+            this.s102Btn.UseVisualStyleBackColor = true;
+            // 
+            // s104Btn
+            // 
+            this.s104Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s104Btn.IconColor = System.Drawing.Color.Black;
+            this.s104Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s104Btn.Location = new System.Drawing.Point(125, 212);
+            this.s104Btn.Name = "s104Btn";
+            this.s104Btn.Size = new System.Drawing.Size(94, 87);
+            this.s104Btn.TabIndex = 24;
+            this.s104Btn.Text = "S-104";
+            this.s104Btn.UseVisualStyleBackColor = true;
+            // 
+            // s103Btn
+            // 
+            this.s103Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s103Btn.IconColor = System.Drawing.Color.Black;
+            this.s103Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s103Btn.Location = new System.Drawing.Point(12, 212);
+            this.s103Btn.Name = "s103Btn";
+            this.s103Btn.Size = new System.Drawing.Size(94, 87);
+            this.s103Btn.TabIndex = 23;
+            this.s103Btn.Text = "S-103";
+            this.s103Btn.UseVisualStyleBackColor = true;
+            // 
+            // s106Btn
+            // 
+            this.s106Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s106Btn.IconColor = System.Drawing.Color.Black;
+            this.s106Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s106Btn.Location = new System.Drawing.Point(125, 343);
+            this.s106Btn.Name = "s106Btn";
+            this.s106Btn.Size = new System.Drawing.Size(94, 87);
+            this.s106Btn.TabIndex = 26;
+            this.s106Btn.Text = "S-105";
+            this.s106Btn.UseVisualStyleBackColor = true;
+            // 
+            // s105Btn
+            // 
+            this.s105Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.s105Btn.IconColor = System.Drawing.Color.Black;
+            this.s105Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.s105Btn.Location = new System.Drawing.Point(12, 343);
+            this.s105Btn.Name = "s105Btn";
+            this.s105Btn.Size = new System.Drawing.Size(94, 87);
+            this.s105Btn.TabIndex = 25;
+            this.s105Btn.Text = "S-105";
+            this.s105Btn.UseVisualStyleBackColor = true;
+            // 
+            // m106Btn
+            // 
+            this.m106Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m106Btn.IconColor = System.Drawing.Color.Black;
+            this.m106Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m106Btn.Location = new System.Drawing.Point(407, 343);
+            this.m106Btn.Name = "m106Btn";
+            this.m106Btn.Size = new System.Drawing.Size(94, 87);
+            this.m106Btn.TabIndex = 32;
+            this.m106Btn.Text = "M-106";
+            this.m106Btn.UseVisualStyleBackColor = true;
+            // 
+            // m105Btn
+            // 
+            this.m105Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m105Btn.IconColor = System.Drawing.Color.Black;
+            this.m105Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m105Btn.Location = new System.Drawing.Point(294, 343);
+            this.m105Btn.Name = "m105Btn";
+            this.m105Btn.Size = new System.Drawing.Size(94, 87);
+            this.m105Btn.TabIndex = 31;
+            this.m105Btn.Text = "M-105";
+            this.m105Btn.UseVisualStyleBackColor = true;
+            // 
+            // m104Btn
+            // 
+            this.m104Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m104Btn.IconColor = System.Drawing.Color.Black;
+            this.m104Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m104Btn.Location = new System.Drawing.Point(407, 212);
+            this.m104Btn.Name = "m104Btn";
+            this.m104Btn.Size = new System.Drawing.Size(94, 87);
+            this.m104Btn.TabIndex = 30;
+            this.m104Btn.Text = "M-104";
+            this.m104Btn.UseVisualStyleBackColor = true;
+            // 
+            // m103Btn
+            // 
+            this.m103Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m103Btn.IconColor = System.Drawing.Color.Black;
+            this.m103Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m103Btn.Location = new System.Drawing.Point(294, 212);
+            this.m103Btn.Name = "m103Btn";
+            this.m103Btn.Size = new System.Drawing.Size(94, 87);
+            this.m103Btn.TabIndex = 29;
+            this.m103Btn.Text = "M-103";
+            this.m103Btn.UseVisualStyleBackColor = true;
+            // 
+            // m102Btn
+            // 
+            this.m102Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m102Btn.IconColor = System.Drawing.Color.Black;
+            this.m102Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m102Btn.Location = new System.Drawing.Point(407, 88);
+            this.m102Btn.Name = "m102Btn";
+            this.m102Btn.Size = new System.Drawing.Size(94, 87);
+            this.m102Btn.TabIndex = 28;
+            this.m102Btn.Text = "M-102";
+            this.m102Btn.UseVisualStyleBackColor = true;
+            // 
+            // m101Btn
+            // 
+            this.m101Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.m101Btn.IconColor = System.Drawing.Color.Black;
+            this.m101Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.m101Btn.Location = new System.Drawing.Point(294, 88);
+            this.m101Btn.Name = "m101Btn";
+            this.m101Btn.Size = new System.Drawing.Size(94, 87);
+            this.m101Btn.TabIndex = 27;
+            this.m101Btn.Text = "M-101";
+            this.m101Btn.UseVisualStyleBackColor = true;
+            // 
+            // l106Btn
+            // 
+            this.l106Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l106Btn.IconColor = System.Drawing.Color.Black;
+            this.l106Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l106Btn.Location = new System.Drawing.Point(661, 343);
+            this.l106Btn.Name = "l106Btn";
+            this.l106Btn.Size = new System.Drawing.Size(94, 87);
+            this.l106Btn.TabIndex = 38;
+            this.l106Btn.Text = "L-106";
+            this.l106Btn.UseVisualStyleBackColor = true;
+            // 
+            // l105Btn
+            // 
+            this.l105Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l105Btn.IconColor = System.Drawing.Color.Black;
+            this.l105Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l105Btn.Location = new System.Drawing.Point(548, 343);
+            this.l105Btn.Name = "l105Btn";
+            this.l105Btn.Size = new System.Drawing.Size(94, 87);
+            this.l105Btn.TabIndex = 37;
+            this.l105Btn.Text = "L-105";
+            this.l105Btn.UseVisualStyleBackColor = true;
+            // 
+            // l104Btn
+            // 
+            this.l104Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l104Btn.IconColor = System.Drawing.Color.Black;
+            this.l104Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l104Btn.Location = new System.Drawing.Point(661, 212);
+            this.l104Btn.Name = "l104Btn";
+            this.l104Btn.Size = new System.Drawing.Size(94, 87);
+            this.l104Btn.TabIndex = 36;
+            this.l104Btn.Text = "L-104";
+            this.l104Btn.UseVisualStyleBackColor = true;
+            // 
+            // l103Btn
+            // 
+            this.l103Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l103Btn.IconColor = System.Drawing.Color.Black;
+            this.l103Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l103Btn.Location = new System.Drawing.Point(548, 212);
+            this.l103Btn.Name = "l103Btn";
+            this.l103Btn.Size = new System.Drawing.Size(94, 87);
+            this.l103Btn.TabIndex = 35;
+            this.l103Btn.Text = "L-103";
+            this.l103Btn.UseVisualStyleBackColor = true;
+            // 
+            // l102Btn
+            // 
+            this.l102Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l102Btn.IconColor = System.Drawing.Color.Black;
+            this.l102Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l102Btn.Location = new System.Drawing.Point(661, 88);
+            this.l102Btn.Name = "l102Btn";
+            this.l102Btn.Size = new System.Drawing.Size(94, 87);
+            this.l102Btn.TabIndex = 34;
+            this.l102Btn.Text = "L-102";
+            this.l102Btn.UseVisualStyleBackColor = true;
+            // 
+            // l101Btn
+            // 
+            this.l101Btn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.l101Btn.IconColor = System.Drawing.Color.Black;
+            this.l101Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.l101Btn.Location = new System.Drawing.Point(548, 88);
+            this.l101Btn.Name = "l101Btn";
+            this.l101Btn.Size = new System.Drawing.Size(94, 87);
+            this.l101Btn.TabIndex = 33;
+            this.l101Btn.Text = "L-101";
+            this.l101Btn.UseVisualStyleBackColor = true;
+            // 
+            // Rooms
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 677);
+            this.ClientSize = new System.Drawing.Size(787, 550);
+            this.Controls.Add(this.l106Btn);
+            this.Controls.Add(this.l105Btn);
+            this.Controls.Add(this.l104Btn);
+            this.Controls.Add(this.l103Btn);
+            this.Controls.Add(this.l102Btn);
+            this.Controls.Add(this.l101Btn);
+            this.Controls.Add(this.m106Btn);
+            this.Controls.Add(this.m105Btn);
+            this.Controls.Add(this.m104Btn);
+            this.Controls.Add(this.m103Btn);
+            this.Controls.Add(this.m102Btn);
+            this.Controls.Add(this.m101Btn);
+            this.Controls.Add(this.s106Btn);
+            this.Controls.Add(this.s105Btn);
+            this.Controls.Add(this.s104Btn);
+            this.Controls.Add(this.s103Btn);
+            this.Controls.Add(this.s102Btn);
+            this.Controls.Add(this.s101Btn);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.iconButton5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form5";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Rooms";
             this.Text = "Form5";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,10 +342,26 @@ namespace HotelManagement_Information_Management_2
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton s101Btn;
+        private FontAwesome.Sharp.IconButton s102Btn;
+        private FontAwesome.Sharp.IconButton s104Btn;
+        private FontAwesome.Sharp.IconButton s103Btn;
+        private FontAwesome.Sharp.IconButton s106Btn;
+        private FontAwesome.Sharp.IconButton s105Btn;
+        private FontAwesome.Sharp.IconButton m106Btn;
+        private FontAwesome.Sharp.IconButton m105Btn;
+        private FontAwesome.Sharp.IconButton m104Btn;
+        private FontAwesome.Sharp.IconButton m103Btn;
+        private FontAwesome.Sharp.IconButton m102Btn;
+        private FontAwesome.Sharp.IconButton m101Btn;
+        private FontAwesome.Sharp.IconButton l106Btn;
+        private FontAwesome.Sharp.IconButton l105Btn;
+        private FontAwesome.Sharp.IconButton l104Btn;
+        private FontAwesome.Sharp.IconButton l103Btn;
+        private FontAwesome.Sharp.IconButton l102Btn;
+        private FontAwesome.Sharp.IconButton l101Btn;
     }
 }

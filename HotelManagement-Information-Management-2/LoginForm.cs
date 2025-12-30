@@ -63,7 +63,7 @@ namespace HotelManagement_Information_Management_2
                         {
                             if (dr.HasRows)
                             {
-                                if (dr.Read()) // ← THIS is required
+                                if (dr.Read())
                                 {
                                     int userId = dr.GetInt32("user_id");
                                     string username = dr.GetString("username");

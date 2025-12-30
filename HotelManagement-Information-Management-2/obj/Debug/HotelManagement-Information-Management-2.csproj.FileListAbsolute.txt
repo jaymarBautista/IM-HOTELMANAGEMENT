@@ -63,3 +63,4 @@ C:\Users\NITRO 5\Downloads\IM_ENTERM\HotelManagement-Information-Management-2\bi
 C:\Users\NITRO 5\Downloads\IM_ENTERM\HotelManagement-Information-Management-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\NITRO 5\Downloads\IM_ENTERM\HotelManagement-Information-Management-2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\NITRO 5\Downloads\IM_ENTERM\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.CreateAccount.resources
+C:\Users\NITRO 5\Downloads\IM_ENTERM\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.DateInputForm.resources

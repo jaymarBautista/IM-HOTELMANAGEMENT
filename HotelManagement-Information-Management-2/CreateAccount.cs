@@ -22,35 +22,70 @@ namespace HotelManagement_Information_Management_2
         {
             string conString = "server=localhost;username=root;password=;database=im_etr";
             MySqlCommand cmd;
-            MySqlDataReader dr;
             MySqlConnection conn;
+            string fullname = fullnameTxt.Text;
             string username = usernameTxt.Text;
             string password = passwordTxt.Text;
-
+            string contact = contactTxt.Text;
+            string emergency = emergencyTxt.Text;
             try
             {
                 using (conn = new MySqlConnection(conString))
                 {
-                    string sql = "INSERT INTO users (username, password) VALUES (@username, @password)";
                     conn.Open();
-                    using (cmd = new MySqlCommand(sql, conn))
+
+                    using (MySqlTransaction transaction = conn.BeginTransaction())
                     {
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                      
+                            string sqlUser = @"INSERT INTO users (username, password) 
+                                   VALUES (@username, @password);
+                                   SELECT LAST_INSERT_ID();";
+
+                            int userId;
+
+                            using (cmd = new MySqlCommand(sqlUser, conn, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@username", username);
+                                cmd.Parameters.AddWithValue("@password", password);
+
+                                userId = Convert.ToInt32(cmd.ExecuteScalar());
+                            }
+
+                           
+                            string sqlTenant = @"INSERT INTO tenants 
+                            (full_name, contact_number, emergency_contact, user_id) 
+                            VALUES (@fullname, @contact, @emergency, @user_id)";
+
+                            using (cmd = new MySqlCommand(sqlTenant, conn, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@fullname", fullname);
+                                cmd.Parameters.AddWithValue("@contact", contact);
+                                cmd.Parameters.AddWithValue("@emergency", emergency);
+                                cmd.Parameters.AddWithValue("@user_id", userId);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+
+                            MessageBox.Show(
+                                "Account created successfully.",
+                                "Success",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                            );
+
+                            this.Close();
+                        }
+                        catch
+                        {
+                            transaction.Rollback();
+                            throw;
+                        }
                     }
                 }
-                DialogResult result = MessageBox.Show(
-                   "Account created successfully.",
-                   "Success",
-                   MessageBoxButtons.OK,
-                   MessageBoxIcon.Information
-               );
-
-                if (result == DialogResult.OK)
-                {
-                    this.Close();
-                } 
             }
             catch (MySqlException ex)
             {
@@ -78,6 +113,11 @@ namespace HotelManagement_Information_Management_2
                 MessageBox.Show(ex.ToString());
                 throw;
             }
+        }
+
+        private void CreateAccount_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

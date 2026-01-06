@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 using MySql.Data.MySqlClient;
 
 namespace HotelManagement_Information_Management_2
@@ -110,6 +111,13 @@ namespace HotelManagement_Information_Management_2
                     btn.BackColor = Color.Purple;
                     btn.ForeColor = Color.White;
                     btn.FlatAppearance.BorderColor = Color.Indigo; // Container border color
+                    break;
+                case "Dirty": // NEW STATUS
+                    btn.BackColor = Color.Orange;
+                    btn.ForeColor = Color.White;
+                  
+                    btn.Text += "\n(Needs Cleaning)";
+                    btn.FlatAppearance.BorderColor = Color.DarkOrange;
                     break;
                 default:
                     btn.BackColor = Color.White;
@@ -299,12 +307,13 @@ namespace HotelManagement_Information_Management_2
                 {
                     CompleteBookingByRoom(roomId);
 
-                    ChangeRoomStatus(roomId, "Available");
-                    UpdateRoomButtonColor(roomNumber, "Available");
+                    ChangeRoomStatus(roomId, "Dirty");
+                    UpdateRoomButtonColor(roomNumber, "Dirty");
 
-                    MessageBox.Show("Tenants checked out successfully.");
+                    MessageBox.Show("Tenants checked out. Room marked for Housekeeping..");
                 }
             }
+
 
 
             if (!string.IsNullOrEmpty(newStatus))
@@ -504,28 +513,15 @@ namespace HotelManagement_Information_Management_2
         private void ShowTenantRoomDetails(string roomNumber)
         {
             DataRow roomData = GetRoomDetails(roomNumber);
-            if (roomData == null)
-            {
-                MessageBox.Show("Room not found.");
-                return;
-            }
+            if (roomData == null) return;
 
             int roomId = Convert.ToInt32(roomData["room_id"]);
             string status = roomData["status"].ToString();
             int capacity = Convert.ToInt32(roomData["capacity"]);
             decimal rate = Convert.ToDecimal(roomData["rate"]);
 
-            if (status == "Occupied")
-            {
-                MessageBox.Show("This room is currently occupied.", "Room Occupied",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (status == "Maintenance")
-            {
-                MessageBox.Show("This room is under maintenance.", "Room Unavailable",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (status == "Available")
+            // --- PART 1: BOOKING LOGIC ---
+            if (status == "Available")
             {
                 StringBuilder msg = new StringBuilder();
                 msg.AppendLine($"Room: {roomNumber}");
@@ -540,6 +536,28 @@ namespace HotelManagement_Information_Management_2
                 if (result == DialogResult.Yes)
                 {
                     RequestRoom(roomId, roomNumber);
+                }
+            }
+            else if (status == "Occupied")
+            {
+                MessageBox.Show("This room is currently occupied.", "Room Occupied");
+            }
+            else if (status == "Maintenance")
+            {
+                MessageBox.Show("This room is under maintenance.", "Room Unavailable");
+            }
+
+            // --- PART 2: FEEDBACK LOGIC (Independent of Status) ---
+            // This allows a user to review a room they stayed in, even if it's now Occupied or Dirty
+            if (HasUserStayedInRoom(roomId))
+            {
+                DialogResult result2 = MessageBox.Show("You have stayed in this room. Would you like to leave a review?",
+                    "Room Feedback", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (result2 == DialogResult.Yes)
+                {
+                    ReviewSubmissionForm revForm = new ReviewSubmissionForm(roomId, _userId, roomNumber);
+                    revForm.ShowDialog();
                 }
             }
         }
@@ -620,6 +638,7 @@ namespace HotelManagement_Information_Management_2
             return null;
         }
 
+
         private void Rooms_Load(object sender, EventArgs e)
         {
             LoadRoomStatuses();
@@ -628,6 +647,48 @@ namespace HotelManagement_Information_Management_2
         private void s101Btn_Click(object sender, EventArgs e)
         {
 
+        }
+        private bool HasUserStayedInRoom(int roomId)
+        {
+            // We check for 'Approved' (currently staying) or 'Completed' (stayed before)
+            string sql = @"SELECT COUNT(*) FROM bookings b
+                   JOIN tenants t ON b.tenant_id = t.tenant_id
+                   WHERE b.room_id = @roomId 
+                   AND t.user_id = @userId 
+                   AND (b.status = 'Approved' OR b.status = 'Completed')";
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(conString))
+                {
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@roomId", roomId);
+                        cmd.Parameters.AddWithValue("@userId", _userId);
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        return count > 0; // Returns true if they have a valid history
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error validating history: " + ex.Message);
+                return false;
+            }
+        }
+        private void btnFeedbackManagement_Click(object sender, EventArgs e)
+        {
+            if (_role == "admin")
+            {
+                FeedbackManagerForm frm = new FeedbackManagerForm();
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Admins only.");
+            }
         }
     }
 }

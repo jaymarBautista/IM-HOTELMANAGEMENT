@@ -41,6 +41,7 @@ namespace HotelManagement_Information_Management_2
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.housekeepingBtn = new FontAwesome.Sharp.IconButton();
             this.toolStripContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,7 +71,7 @@ namespace HotelManagement_Information_Management_2
             this.dashboardBtn.Location = new System.Drawing.Point(39, 150);
             this.dashboardBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashboardBtn.Name = "dashboardBtn";
-            this.dashboardBtn.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.dashboardBtn.Padding = new System.Windows.Forms.Padding(15);
             this.dashboardBtn.Size = new System.Drawing.Size(314, 76);
             this.dashboardBtn.TabIndex = 4;
             this.dashboardBtn.Text = "Dashboard";
@@ -89,7 +90,7 @@ namespace HotelManagement_Information_Management_2
             this.guestBtn.Location = new System.Drawing.Point(39, 313);
             this.guestBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guestBtn.Name = "guestBtn";
-            this.guestBtn.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.guestBtn.Padding = new System.Windows.Forms.Padding(15);
             this.guestBtn.Size = new System.Drawing.Size(314, 76);
             this.guestBtn.TabIndex = 5;
             this.guestBtn.Text = "Tenant Details";
@@ -108,7 +109,7 @@ namespace HotelManagement_Information_Management_2
             this.roomsBtn.Location = new System.Drawing.Point(39, 231);
             this.roomsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roomsBtn.Name = "roomsBtn";
-            this.roomsBtn.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.roomsBtn.Padding = new System.Windows.Forms.Padding(15);
             this.roomsBtn.Size = new System.Drawing.Size(314, 76);
             this.roomsBtn.TabIndex = 6;
             this.roomsBtn.Text = "Rooms";
@@ -127,7 +128,7 @@ namespace HotelManagement_Information_Management_2
             this.bookingBtn.Location = new System.Drawing.Point(39, 394);
             this.bookingBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookingBtn.Name = "bookingBtn";
-            this.bookingBtn.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.bookingBtn.Padding = new System.Windows.Forms.Padding(15);
             this.bookingBtn.Size = new System.Drawing.Size(314, 76);
             this.bookingBtn.TabIndex = 7;
             this.bookingBtn.Text = "Booking History";
@@ -172,6 +173,7 @@ namespace HotelManagement_Information_Management_2
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.housekeepingBtn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.guestBtn);
             this.panel1.Controls.Add(this.dashboardBtn);
@@ -232,6 +234,25 @@ namespace HotelManagement_Information_Management_2
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // housekeepingBtn
+            // 
+            this.housekeepingBtn.BackColor = System.Drawing.Color.White;
+            this.housekeepingBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.housekeepingBtn.ForeColor = System.Drawing.Color.Teal;
+            this.housekeepingBtn.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.housekeepingBtn.IconColor = System.Drawing.Color.Teal;
+            this.housekeepingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.housekeepingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.housekeepingBtn.Location = new System.Drawing.Point(39, 474);
+            this.housekeepingBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.housekeepingBtn.Name = "housekeepingBtn";
+            this.housekeepingBtn.Padding = new System.Windows.Forms.Padding(15);
+            this.housekeepingBtn.Size = new System.Drawing.Size(314, 76);
+            this.housekeepingBtn.TabIndex = 9;
+            this.housekeepingBtn.Text = "Housekeeping";
+            this.housekeepingBtn.UseVisualStyleBackColor = false;
+            this.housekeepingBtn.Click += new System.EventHandler(this.housekeepingBtn_Click_1);
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -272,5 +293,6 @@ namespace HotelManagement_Information_Management_2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton housekeepingBtn;
     }
 }

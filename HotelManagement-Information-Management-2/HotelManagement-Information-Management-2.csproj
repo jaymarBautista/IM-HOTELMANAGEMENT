@@ -114,6 +114,18 @@
     <Compile Include="DateInputForm .Designer.cs">
       <DependentUpon>DateInputForm .cs</DependentUpon>
     </Compile>
+    <Compile Include="FeedbackManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackManagerForm.Designer.cs">
+      <DependentUpon>FeedbackManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Housekeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Housekeeping.Designer.cs">
+      <DependentUpon>Housekeeping.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     <Compile Include="Guest.Designer.cs">
       <DependentUpon>Guest.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReviewSubmissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewSubmissionForm.Designer.cs">
+      <DependentUpon>ReviewSubmissionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +176,12 @@
     <EmbeddedResource Include="DateInputForm .resx">
       <DependentUpon>DateInputForm .cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackManagerForm.resx">
+      <DependentUpon>FeedbackManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Housekeeping.resx">
+      <DependentUpon>Housekeeping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Guest.resx">
       <DependentUpon>Guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewSubmissionForm.resx">
+      <DependentUpon>ReviewSubmissionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rooms.resx">
       <DependentUpon>Rooms.cs</DependentUpon>

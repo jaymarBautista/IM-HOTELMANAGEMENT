@@ -44,12 +44,18 @@ namespace HotelManagement_Information_Management_2
         {
             if (_role == "tenant")
             {
-                guestBtn.Enabled = false;
                 guestBtn.Visible = false;
-                bookingBtn.Enabled = false;
                 bookingBtn.Visible = false;
-
+                housekeepingBtn.Visible = false; // Hide from tenants
             }
+        }
+        private void housekeepingBtn_Click(object sender, EventArgs e)
+        {
+            loadForm(new Housekeeping());
+        }
+        private void housekeepingBtn_Click_1(object sender, EventArgs e)
+        {
+            loadForm(new Housekeeping());
         }
 
         private void dashboardBtn_Click(object sender, EventArgs e)
@@ -98,5 +104,7 @@ namespace HotelManagement_Information_Management_2
         {
 
         }
+
+        
     }
 }

@@ -113,3 +113,6 @@ C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManageme
 C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.csproj.CopyComplete
 C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.exe
 C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement-Information-Management-2.pdb
+C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.Housekeeping.resources
+C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.FeedbackManagerForm.resources
+C:\IM_FINAL_REQ\HotelManagement-Information-Management-2\obj\Debug\HotelManagement_Information_Management_2.ReviewSubmissionForm.resources

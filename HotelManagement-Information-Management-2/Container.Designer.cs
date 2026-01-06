@@ -37,11 +37,11 @@ namespace HotelManagement_Information_Management_2
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.housekeepingBtn = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.housekeepingBtn = new FontAwesome.Sharp.IconButton();
             this.toolStripContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,7 +55,7 @@ namespace HotelManagement_Information_Management_2
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(32, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 32);
+            this.label2.Size = new System.Drawing.Size(241, 27);
             this.label2.TabIndex = 3;
             this.label2.Text = "HOTEL MANAGEMENT  ";
             // 
@@ -189,6 +189,25 @@ namespace HotelManagement_Information_Management_2
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // housekeepingBtn
+            // 
+            this.housekeepingBtn.BackColor = System.Drawing.Color.White;
+            this.housekeepingBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.housekeepingBtn.ForeColor = System.Drawing.Color.Teal;
+            this.housekeepingBtn.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.housekeepingBtn.IconColor = System.Drawing.Color.Teal;
+            this.housekeepingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.housekeepingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.housekeepingBtn.Location = new System.Drawing.Point(39, 474);
+            this.housekeepingBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.housekeepingBtn.Name = "housekeepingBtn";
+            this.housekeepingBtn.Padding = new System.Windows.Forms.Padding(15);
+            this.housekeepingBtn.Size = new System.Drawing.Size(314, 76);
+            this.housekeepingBtn.TabIndex = 9;
+            this.housekeepingBtn.Text = "Housekeeping";
+            this.housekeepingBtn.UseVisualStyleBackColor = false;
+            this.housekeepingBtn.Click += new System.EventHandler(this.housekeepingBtn_Click_1);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -197,7 +216,7 @@ namespace HotelManagement_Information_Management_2
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(125, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 32);
+            this.label1.Size = new System.Drawing.Size(90, 27);
             this.label1.TabIndex = 8;
             this.label1.Text = "SYSTEM";
             // 
@@ -233,25 +252,6 @@ namespace HotelManagement_Information_Management_2
             this.panel3.Size = new System.Drawing.Size(1132, 800);
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // housekeepingBtn
-            // 
-            this.housekeepingBtn.BackColor = System.Drawing.Color.White;
-            this.housekeepingBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.housekeepingBtn.ForeColor = System.Drawing.Color.Teal;
-            this.housekeepingBtn.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.housekeepingBtn.IconColor = System.Drawing.Color.Teal;
-            this.housekeepingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.housekeepingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.housekeepingBtn.Location = new System.Drawing.Point(39, 474);
-            this.housekeepingBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.housekeepingBtn.Name = "housekeepingBtn";
-            this.housekeepingBtn.Padding = new System.Windows.Forms.Padding(15);
-            this.housekeepingBtn.Size = new System.Drawing.Size(314, 76);
-            this.housekeepingBtn.TabIndex = 9;
-            this.housekeepingBtn.Text = "Housekeeping";
-            this.housekeepingBtn.UseVisualStyleBackColor = false;
-            this.housekeepingBtn.Click += new System.EventHandler(this.housekeepingBtn_Click_1);
             // 
             // Container
             // 

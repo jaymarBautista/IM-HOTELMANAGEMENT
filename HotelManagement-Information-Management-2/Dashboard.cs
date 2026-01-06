@@ -38,7 +38,6 @@ namespace HotelManagement_Information_Management_2
             {
                 //numRooms.Text
                 numCheckInPanel.Visible = false;
-                numGuestPanel.Visible = false;
                 numPendingPanel.Visible = false;
                 addUserBtn.Visible = false;
                 addUserBtn.Enabled = false;
@@ -148,9 +147,6 @@ namespace HotelManagement_Information_Management_2
 
         }
 
-        private void numCheckIn_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
